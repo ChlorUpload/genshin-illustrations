@@ -26,6 +26,10 @@ def process():
             if not os.path.isdir(character_dir):
                 continue
             print(f"processing character: {character}")
+            for filter in ['train', 'valid']:
+                if not os.path.exists(f'process_result/{filter}/{character}'):
+                    os.mkdir(f'process_result/{filter}/{character}')
+
             images = os.listdir(character_dir)
             num_trains = int(len(images) * 0.8)
             for img_idx, image in enumerate(images):
@@ -39,9 +43,8 @@ def process():
                     x, y, w, h = face
                     cropped = img[y:y+h, x:x+w]
                     resized = cv2.resize(cropped, (128, 128))
-
                     cv2.imwrite(
-                        f'process_result/{filter}/{country}-{character}-{stem}-{idx}{suffix}', resized)
+                        f'process_result/{filter}/{character}/{stem}-{idx}{suffix}', resized)
 
 
 if __name__ == "__main__":
