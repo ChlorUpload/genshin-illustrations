@@ -1,7 +1,7 @@
 import os
 import cv2
 import pathlib
-from anime_face_detect import detect
+from anime_face_detect2 import detect
 
 
 countries = ["mondstadt", "liyue", "inazuma"]
@@ -38,6 +38,9 @@ def process():
                 stem = image_path.stem
                 suffix = image_path.suffix
                 filter = 'train' if img_idx < num_trains else 'valid'
+
+                if len(faces) == 0:
+                    print(f"{country}/{character}/{image}")
 
                 for idx, face in enumerate(faces):
                     x, y, w, h = face
