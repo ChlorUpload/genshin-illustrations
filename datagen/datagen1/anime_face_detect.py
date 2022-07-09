@@ -3,7 +3,7 @@ import sys
 import os.path
 
 
-def detect(filename, cascade_file="./utils/lbpcascade_animeface.xml"):
+def detect(filename, cascade_file="./utils/datagen1/lbpcascade_animeface.xml"):
     if not os.path.isfile(cascade_file):
         raise RuntimeError("%s: not found" % cascade_file)
 
