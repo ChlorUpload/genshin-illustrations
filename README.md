@@ -5,7 +5,7 @@ A deep learning based image classification example to determine genshin impact c
 
 ## Dataset
 
-Over 300 genshin solo chatracter illustrations collected in this repo. The images are categorized with the character's birthplace and their name.
+Over 300 genshin solo chatracter illustrations are collected and categorized with the character's birthplace and their name.
 
 File Structure:
 > `nation-name` / `character-name` / `character-image.jpg`
