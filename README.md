@@ -1,7 +1,7 @@
 ﻿# genshin-illustrations
 
 ## Genshin Illustrations Classification
-A deep learning based image classification example to determine genshin impact charactor from a grayscale image.
+A deep learning based image classification example to determine genshin impact character from a grayscale image.
 
 ## Dataset
 
