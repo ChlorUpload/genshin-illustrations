@@ -5,13 +5,13 @@ A deep learning based image classification example to determine genshin impact c
 
 ## Dataset
 
-Over 300 genshin solo chatractor illustrations collected in this repo. The images are categorized with the character's birthplaces and their names.
+Over 300 genshin solo chatractor illustrations collected in this repo. The images are categorized with the character's birthplace and their name.
 
 File Structure:
 > `nation-name` / `character-name` / `character-image.jpg`
 
 ## Preprocessing
-`datagen` is anime face detector to extract the face images from the dataset. `process.py` generates face images in the `process_result` folder and stores them by names.
+`datagen` is anime face detector to extract the face images from the dataset. `process.py` generates face images in the `process_result` folder and stores them by name.
 
 ## Training
 You can train and test the model in `train.ipynb`.
