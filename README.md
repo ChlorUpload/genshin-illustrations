@@ -21,7 +21,7 @@ You can train and test the model in `train.ipynb`.
 ### Datagen (image augmentation) result:  
 ![datagen result](datagen_result.png)  
 
-### Prediction results from validation set:  
+### Prediction results (images from validation split):  
 ![result1](prediction_result.png)  
 ![result2](prediction_result2.png)  
 ![result3](prediction_result3.png)  
